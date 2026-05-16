@@ -341,7 +341,7 @@ p {
 
 .gallery {
   display: grid;
-  grid-template-columns: 1.04fr .74fr .72fr .72fr .66fr .84fr;
+  grid-template-columns: 1.02fr .72fr .72fr .72fr .72fr .66fr .84fr;
   gap: 1px;
   background: var(--line);
 }
