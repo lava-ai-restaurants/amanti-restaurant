@@ -268,6 +268,72 @@ p {
   color: rgba(33, 24, 17, .72);
 }
 
+.table-runner {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(280px, .72fr) minmax(0, 1.28fr);
+  gap: clamp(28px, 5vw, 70px);
+  align-items: center;
+  padding: clamp(54px, 8vw, 110px) clamp(18px, 5vw, 72px);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(216, 221, 195, .72), transparent 34%),
+    linear-gradient(135deg, #fff8ed, #ead8bf);
+  color: var(--ink);
+  border-block: 1px solid rgba(74, 46, 31, .16);
+}
+
+.runner-copy {
+  position: relative;
+  z-index: 2;
+}
+
+.runner-copy p { color: rgba(33, 24, 17, .72); }
+
+.runner-track {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(160px, 1fr));
+  gap: clamp(10px, 1.6vw, 18px);
+  align-items: center;
+}
+
+.runner-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(74, 46, 31, .12);
+  background: #fffaf1;
+  box-shadow: 0 24px 70px rgba(33, 24, 17, .16);
+}
+
+.runner-card img {
+  aspect-ratio: 4 / 5;
+  height: 100%;
+  object-fit: cover;
+}
+
+.runner-card figcaption {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  padding: 10px 12px;
+  background: rgba(255, 248, 237, .86);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(18px, 1.8vw, 28px);
+  line-height: 1;
+}
+
+.tilt-left { transform: rotate(-2.4deg); }
+.tilt-right { transform: rotate(2deg); }
+.lift { transform: translateY(-28px); }
+
+.origin-runner {
+  background:
+    radial-gradient(circle at 85% 15%, rgba(200, 164, 106, .24), transparent 30%),
+    linear-gradient(135deg, #f7ecdc, #dfe3c9);
+}
+
 .origin-manifesto {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(300px, .95fr);
@@ -468,6 +534,32 @@ p {
   padding-top: 28px;
 }
 
+.menu-note-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 28px;
+  background: rgba(74, 46, 31, .16);
+}
+
+.menu-note-grid article {
+  min-height: 170px;
+  padding: clamp(22px, 3vw, 34px);
+  background: rgba(255, 248, 237, .94);
+}
+
+.menu-note-grid span {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(26px, 3vw, 42px);
+  line-height: 1;
+}
+
+.menu-note-grid p {
+  margin-bottom: 0;
+  color: rgba(33, 24, 17, .68);
+}
+
 .menu-section {
   background: linear-gradient(180deg, var(--daylight), #efe1ce);
   color: var(--ink);
@@ -623,6 +715,26 @@ figure { margin: 0; }
   object-fit: cover;
 }
 
+.ingredient-strip {
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
+  padding: 18px clamp(18px, 5vw, 72px);
+  background: var(--olive);
+  color: var(--daylight);
+  border-block: 1px solid rgba(244, 237, 226, .2);
+}
+
+.ingredient-strip span {
+  flex: 0 0 auto;
+  padding: 10px 14px;
+  border: 1px solid rgba(244, 237, 226, .28);
+  border-radius: 999px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(17px, 1.8vw, 28px);
+  line-height: 1;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -641,6 +753,29 @@ figure { margin: 0; }
 .gallery figcaption {
   font-size: clamp(20px, 2vw, 30px);
   padding: 58px 18px 18px;
+}
+
+.organic-gallery {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  background: #f4ede2;
+  padding: 1px;
+}
+
+.organic-gallery figure {
+  border: 1px solid rgba(23, 18, 14, .08);
+}
+
+.organic-gallery figure.round img {
+  border-radius: 50% 50% 6px 6px;
+}
+
+.organic-gallery figure.tall {
+  grid-row: span 2;
+}
+
+.organic-gallery figure.tall img {
+  height: 100%;
+  min-height: 680px;
 }
 
 .after-dark {
@@ -736,6 +871,15 @@ footer {
   }
 
   .menu-panel { grid-template-columns: 1fr; }
+  .table-runner,
+  .runner-track,
+  .menu-note-grid {
+    grid-template-columns: 1fr;
+  }
+  .runner-track { gap: 16px; }
+  .tilt-left,
+  .tilt-right,
+  .lift { transform: none; }
   .origin-map-copy { position: static; }
   .origin-points,
   .food-system-grid { grid-template-columns: 1fr; }
@@ -745,6 +889,8 @@ footer {
   .signature-grid { grid-template-columns: 1fr; }
   .signature-grid img { height: 74svh; }
   .gallery { grid-template-columns: 1fr; }
+  .organic-gallery { grid-template-columns: 1fr; }
+  .organic-gallery figure.tall img { min-height: 0; height: 72svh; }
   .gallery img,
   .gallery figure.wide img { height: 72svh; }
   .gallery figure.wide { grid-column: auto; }
