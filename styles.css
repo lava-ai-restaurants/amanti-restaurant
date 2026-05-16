@@ -5,6 +5,8 @@
   --brass: #c8a46a;
   --marble: #e8ddcc;
   --linen: #f4ede2;
+  --daylight: #fff8ed;
+  --sage: #d8ddc3;
   --glass: #6f655b;
   --olive: #6e7352;
   --ink: #211811;
@@ -24,7 +26,7 @@ body {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--linen);
   background:
-    linear-gradient(180deg, rgba(23,18,14,.96), rgba(23,18,14,1) 720px),
+    linear-gradient(180deg, rgba(23,18,14,.86), rgba(244,237,226,.18) 780px, rgba(23,18,14,1) 1180px),
     var(--espresso);
   letter-spacing: 0;
 }
@@ -141,8 +143,8 @@ nav a:hover { color: var(--linen); }
 
 .hero-scrim {
   background:
-    linear-gradient(90deg, rgba(23,18,14,.88), rgba(23,18,14,.4) 48%, rgba(23,18,14,.14)),
-    linear-gradient(0deg, rgba(23,18,14,.88), transparent 42%);
+    linear-gradient(90deg, rgba(23,18,14,.72), rgba(23,18,14,.24) 52%, rgba(23,18,14,.06)),
+    linear-gradient(0deg, rgba(23,18,14,.7), transparent 46%);
 }
 
 .hero-content {
@@ -256,18 +258,30 @@ p {
   align-items: start;
 }
 
+.intro {
+  background: var(--daylight);
+  color: var(--ink);
+}
+
+.intro p,
+.intro .intro-copy p {
+  color: rgba(33, 24, 17, .72);
+}
+
 .origin-manifesto {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(300px, .95fr);
   gap: clamp(34px, 6vw, 90px);
   align-items: start;
+  background: var(--daylight);
+  color: var(--ink);
 }
 
 .origin-manifesto p {
   margin: 0;
   font-size: clamp(19px, 2vw, 30px);
   line-height: 1.32;
-  color: rgba(244, 237, 226, .82);
+  color: rgba(33, 24, 17, .74);
 }
 
 .origin-map {
@@ -275,9 +289,13 @@ p {
   grid-template-columns: minmax(280px, .72fr) minmax(0, 1.28fr);
   gap: clamp(34px, 6vw, 90px);
   background:
-    linear-gradient(180deg, rgba(23,18,14,.96), rgba(74,46,31,.5));
+    linear-gradient(180deg, #efe1ce, rgba(216,221,195,.84));
   border-block: 1px solid var(--line);
+  color: var(--ink);
 }
+
+.origin-map p,
+.origin-map .eyebrow { color: rgba(33, 24, 17, .72); }
 
 .origin-map-copy {
   position: sticky;
@@ -295,7 +313,7 @@ p {
 .origin-points article {
   min-height: 245px;
   padding: clamp(24px, 3.5vw, 46px);
-  background: rgba(23, 18, 14, .92);
+  background: rgba(255, 248, 237, .96);
 }
 
 .origin-points span,
@@ -304,7 +322,7 @@ p {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(28px, 3.3vw, 46px);
   line-height: .98;
-  color: var(--linen);
+  color: var(--ink);
 }
 
 .origin-points p,
@@ -323,8 +341,11 @@ p {
 .origin-ritual > div {
   align-self: center;
   padding: clamp(38px, 6vw, 82px);
-  background: #100c09;
+  background: var(--daylight);
+  color: var(--ink);
 }
+
+.origin-ritual > div p { color: rgba(33, 24, 17, .72); }
 
 .origin-ritual figure {
   position: relative;
@@ -357,8 +378,16 @@ p {
   background: var(--line);
 }
 
+.origin-food-system {
+  background: linear-gradient(180deg, var(--daylight), #efe1ce);
+  color: var(--ink);
+}
+
+.origin-food-system p,
+.origin-food-system .eyebrow { color: rgba(33, 24, 17, .72); }
+
 .food-system-grid article {
-  background: #100c09;
+  background: rgba(255, 248, 237, .96);
 }
 
 .food-system-grid img {
@@ -379,7 +408,11 @@ p {
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
   min-height: 76svh;
   border-top: 1px solid var(--line);
+  background: var(--daylight);
+  color: var(--ink);
 }
+
+.origin-afterword p { color: rgba(33, 24, 17, .72); }
 
 .origin-afterword img {
   height: 100%;
@@ -435,6 +468,14 @@ p {
   padding-top: 28px;
 }
 
+.menu-section {
+  background: linear-gradient(180deg, var(--daylight), #efe1ce);
+  color: var(--ink);
+}
+
+.menu-section p,
+.menu-section .eyebrow { color: var(--walnut); }
+
 .menu-tabs {
   display: grid;
   gap: 8px;
@@ -472,7 +513,7 @@ p {
 .menu-panel article {
   min-height: 150px;
   padding: clamp(22px, 3vw, 34px);
-  background: rgba(23, 18, 14, .92);
+  background: rgba(255, 248, 237, .96);
 }
 
 .menu-panel span {
@@ -480,21 +521,25 @@ p {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(24px, 3vw, 38px);
   line-height: 1;
-  color: var(--linen);
+  color: var(--ink);
 }
 
 .menu-panel em {
   display: block;
   margin-top: 16px;
-  color: rgba(244, 237, 226, .68);
+  color: rgba(33, 24, 17, .68);
   font-style: normal;
   line-height: 1.45;
 }
 
 .signature-board {
-  background: linear-gradient(180deg, rgba(23,18,14,1), rgba(74,46,31,.5));
+  background: linear-gradient(180deg, #efe1ce, rgba(216,221,195,.7));
   border-top: 1px solid var(--line);
+  color: var(--ink);
 }
+
+.signature-board .eyebrow,
+.signature-board p { color: var(--walnut); }
 
 figure { margin: 0; }
 
@@ -603,8 +648,11 @@ figure { margin: 0; }
   grid-template-columns: minmax(280px, .8fr) minmax(0, 1.2fr);
   gap: clamp(34px, 6vw, 90px);
   align-items: center;
-  background: #100c09;
+  background: linear-gradient(180deg, rgba(244,237,226,.96), rgba(216,221,195,.88));
+  color: var(--ink);
 }
+
+.after-dark p { color: rgba(33, 24, 17, .72); }
 
 .after-copy { position: sticky; top: 92px; }
 
