@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="ambient-light" aria-hidden="true"></div>
+  <div class="scroll-meter" aria-hidden="true"><span data-scroll-meter></span></div>
   <header class="site-header" data-header>
     <a class="brand" href="#top" aria-label="Amanti home">AMANTI</a>
     <nav aria-label="Primary">
@@ -81,6 +83,30 @@
           <img src="assets/branzino-lemon.webp" alt="Whole branzino with lemon, herbs, capers, olive oil, and wine">
           <figcaption>Fish, lemon, herbs</figcaption>
         </figure>
+      </div>
+    </section>
+
+    <section class="interactive-table" aria-label="Build an Amanti table">
+      <div class="interactive-copy">
+        <p class="eyebrow">Build The Table</p>
+        <h2>Tap through the meal and the table changes with you.</h2>
+        <p>Amanti should be easy to understand in ten seconds: start fresh, add pizza, add pasta, keep it generous, finish light.</p>
+      </div>
+      <div class="table-stage">
+        <div class="plate-frame">
+          <img data-table-image src="assets/burrata-tomato.webp" alt="Burrata with tomatoes, basil, olive oil, and toasted bread">
+          <div class="plate-label">
+            <span data-table-kicker>Start</span>
+            <strong data-table-title>Burrata, tomato, olive oil</strong>
+            <p data-table-copy>Bright, simple, shareable. The table opens without feeling expensive or formal.</p>
+          </div>
+        </div>
+        <div class="table-choices" role="tablist" aria-label="Choose the Amanti table moment">
+          <button class="active" type="button" data-table-choice data-image="assets/burrata-tomato.webp" data-kicker="Start" data-title="Burrata, tomato, olive oil" data-copy="Bright, simple, shareable. The table opens without feeling expensive or formal.">Antipasti</button>
+          <button type="button" data-table-choice data-image="assets/margherita-pizza.webp" data-kicker="Middle" data-title="Margherita, sausage, broccolini" data-copy="Pizza is the approachable base: useful for families, regulars, bar seats, and weeknight dinners.">Pizza</button>
+          <button type="button" data-table-choice data-image="assets/rigatoni-tomato.webp" data-kicker="Comfort" data-title="Tomato pasta, ragu, passatelli" data-copy="Central Italian comfort. Familiar enough to crave, rooted enough to mean something.">Pasta</button>
+          <button type="button" data-table-choice data-image="assets/branzino-lemon.webp" data-kicker="Still Special" data-title="Branzino, lemon, herbs" data-copy="The ceiling stays high with seafood, wine, and larger plates that keep the room polished.">Secondi</button>
+        </div>
       </div>
     </section>
 
@@ -184,6 +210,19 @@
       <span>Lemon</span>
       <span>Ragu</span>
       <span>Focaccia</span>
+    </section>
+
+    <section class="night-paths" aria-label="Ways to use Amanti">
+      <div class="section-heading">
+        <p class="eyebrow">Choose Your Night</p>
+        <h2>One restaurant, four reasons to come back.</h2>
+      </div>
+      <div class="path-grid">
+        <article><span>01</span><h3>Tuesday Pasta</h3><p>Rigatoni, salad, a glass of red. Easy enough to repeat.</p></article>
+        <article><span>02</span><h3>Pizza + Kids</h3><p>Margherita, focaccia, burrata, simple plates in the middle.</p></article>
+        <article><span>03</span><h3>Date Night</h3><p>Crudo, pasta, branzino, wine, and a room that still has polish.</p></article>
+        <article><span>04</span><h3>Bar Seat</h3><p>One pizza, one cocktail, one bowl of pasta. No production.</p></article>
+      </div>
     </section>
 
     <section class="experience-band" aria-label="Amanti dining experience">
