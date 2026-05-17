@@ -312,6 +312,43 @@ p {
   color: var(--ink);
 }
 
+.guest-snapshot {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: rgba(74, 46, 31, .16);
+  color: var(--ink);
+}
+
+.guest-snapshot a {
+  min-height: 136px;
+  padding: clamp(20px, 3vw, 34px);
+  background: rgba(255, 248, 237, .96);
+  transition: background .2s ease, transform .2s ease;
+}
+
+.guest-snapshot a:hover {
+  background: #d8ddc3;
+  transform: translateY(-3px);
+}
+
+.guest-snapshot span {
+  display: block;
+  color: var(--cognac);
+  font-size: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.guest-snapshot strong {
+  display: block;
+  margin-top: 16px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: clamp(24px, 2.6vw, 38px);
+  line-height: 1;
+}
+
 .mood-room {
   display: grid;
   grid-template-columns: minmax(300px, .8fr) minmax(0, 1.2fr);
@@ -578,6 +615,10 @@ body[data-mood="late"] .mood-controls button:not(.active) { background: rgba(244
 .canvas-copy p {
   max-width: 720px;
   margin-inline: auto;
+}
+
+.canvas-button {
+  margin-top: 18px;
 }
 
 .art-grid {
@@ -1268,6 +1309,7 @@ footer {
   }
 
   .section-grid,
+  .guest-snapshot,
   .mood-room,
   .brand-film,
   .art-grid,
