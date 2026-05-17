@@ -303,6 +303,13 @@ p {
   color: var(--ink);
 }
 
+.brand-statement {
+  background:
+    linear-gradient(135deg, rgba(255, 248, 237, .98), rgba(216, 221, 195, .72)),
+    var(--daylight);
+  color: var(--ink);
+}
+
 .intro p,
 .intro .intro-copy p {
   color: rgba(33, 24, 17, .72);
@@ -372,6 +379,143 @@ p {
   background:
     radial-gradient(circle at 85% 15%, rgba(200, 164, 106, .24), transparent 30%),
     linear-gradient(135deg, #f7ecdc, #dfe3c9);
+}
+
+.brand-film {
+  display: grid;
+  grid-template-columns: 1.35fr .8fr .8fr;
+  grid-auto-rows: minmax(300px, 38vw);
+  gap: 1px;
+  background: rgba(244, 237, 226, .22);
+  border-block: 1px solid var(--line);
+}
+
+.brand-film figure {
+  position: relative;
+  overflow: hidden;
+  background: #0f0b08;
+}
+
+.brand-film .film-large {
+  grid-row: span 2;
+}
+
+.brand-film img {
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(.94) contrast(1.04);
+  transition: transform .8s ease;
+}
+
+.brand-film figure:hover img { transform: scale(1.04); }
+
+.brand-film figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 76px 22px 22px;
+  background: linear-gradient(0deg, rgba(15, 11, 8, .92), transparent);
+  color: var(--linen);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(24px, 3.2vw, 56px);
+  line-height: .95;
+}
+
+.brand-canvas {
+  position: relative;
+  min-height: 82svh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: clamp(70px, 10vw, 140px) clamp(18px, 5vw, 72px);
+  background:
+    radial-gradient(circle at 30% 30%, rgba(200, 164, 106, .28), transparent 28%),
+    radial-gradient(circle at 72% 66%, rgba(216, 221, 195, .22), transparent 30%),
+    #17120e;
+}
+
+.brand-orbit {
+  position: absolute;
+  inset: 8%;
+  border: 1px solid rgba(244, 237, 226, .12);
+  border-radius: 50%;
+  animation: orbitTurn 32s linear infinite;
+}
+
+.brand-orbit span {
+  position: absolute;
+  color: rgba(244, 237, 226, .18);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(38px, 8vw, 132px);
+  letter-spacing: .06em;
+}
+
+.brand-orbit span:nth-child(1) { top: -4%; left: 14%; }
+.brand-orbit span:nth-child(2) { top: 42%; right: -5%; }
+.brand-orbit span:nth-child(3) { bottom: -4%; left: 22%; }
+.brand-orbit span:nth-child(4) { top: 36%; left: -5%; }
+
+@keyframes orbitTurn {
+  to { transform: rotate(360deg); }
+}
+
+.canvas-copy {
+  position: relative;
+  z-index: 2;
+  width: min(900px, 100%);
+  text-align: center;
+}
+
+.canvas-copy p {
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.art-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: rgba(74, 46, 31, .16);
+  color: var(--ink);
+}
+
+.art-grid article {
+  min-height: 420px;
+  padding: clamp(26px, 4vw, 58px);
+  background:
+    linear-gradient(180deg, rgba(255, 248, 237, .95), rgba(232, 221, 204, .78));
+}
+
+.art-grid span {
+  color: var(--cognac);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+}
+
+.art-grid p { color: rgba(33, 24, 17, .72); }
+
+.lifestyle-marquee {
+  overflow: hidden;
+  background: #17120e;
+  border-block: 1px solid rgba(244, 237, 226, .14);
+}
+
+.lifestyle-marquee div {
+  display: flex;
+  width: max-content;
+  animation: marqueeDrift 38s linear infinite;
+}
+
+.lifestyle-marquee img {
+  width: min(72vw, 680px);
+  height: clamp(360px, 44vw, 620px);
+  object-fit: cover;
+  border-right: 1px solid rgba(244, 237, 226, .14);
+}
+
+@keyframes marqueeDrift {
+  to { transform: translateX(-50%); }
 }
 
 .interactive-table {
@@ -1016,6 +1160,8 @@ footer {
   }
 
   .section-grid,
+  .brand-film,
+  .art-grid,
   .origin-manifesto,
   .origin-map,
   .origin-ritual,
@@ -1026,6 +1172,15 @@ footer {
   .visit {
     grid-template-columns: 1fr;
   }
+
+  .brand-film {
+    grid-auto-rows: auto;
+  }
+
+  .brand-film .film-large { grid-row: auto; }
+  .brand-film img { min-height: 430px; }
+  .brand-orbit { inset: 18%; }
+  .brand-orbit span { font-size: clamp(30px, 10vw, 80px); }
 
   .menu-tabs {
     position: static;
