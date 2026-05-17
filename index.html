@@ -20,10 +20,10 @@
   <header class="site-header" data-header>
     <a class="brand" href="#top" aria-label="Amanti home">AMANTI</a>
     <nav aria-label="Primary">
-      <a href="food.html">Menu</a>
+      <a href="food.html">Food Gallery</a>
       <a href="origins.html">Origins</a>
       <a href="#room">Room</a>
-      <a href="#expect">Experience</a>
+      <a href="#tonight">Tonight</a>
       <a href="#visit">Visit</a>
     </nav>
     <a class="header-cta" href="#visit">Reservations</a>
@@ -36,33 +36,60 @@
       <div class="hero-content">
         <p class="eyebrow">Neighborhood Italian / Scottsdale</p>
         <h1>AMANTI</h1>
-        <p class="hero-copy">Neighborhood Italian in North Scottsdale: pizza, pasta, wine, warm light, Umbrian roots, and a room built for weeknight dinners, dates, and regulars.</p>
+        <p class="hero-copy">A brighter neighborhood Italian restaurant for pizza, pasta, wine, art, and the kind of dinner people actually come back for.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#visit">Plan a Night</a>
-          <a class="button ghost" href="food.html">View Menu</a>
-          <a class="button ghost" href="#expect">What To Expect</a>
+          <a class="button primary" href="#tonight">Plan Tonight</a>
+          <a class="button ghost" href="food.html">Food Gallery</a>
+          <a class="button ghost" href="origins.html">Food & Origins</a>
         </div>
       </div>
       <aside class="hero-note" aria-label="Opening note">
         <span>17797 N Scottsdale Rd</span>
-        <span>Warm, bright, useful Italian</span>
+        <span>Pizza / pasta / wine / regulars</span>
       </aside>
     </section>
 
     <section class="guest-snapshot" aria-label="Quick restaurant details">
-      <a href="food.html"><span>Eat</span><strong>Pizza, pasta, antipasti, seafood</strong></a>
+      <a href="food.html"><span>Food</span><strong>Pizza, pasta, antipasti, seafood</strong></a>
+      <a href="#tonight"><span>Use It For</span><strong>Date night, kids, bar seats, regular dinners</strong></a>
       <a href="#visit"><span>Find Us</span><strong>17797 N Scottsdale Rd</strong></a>
-      <a href="#visit"><span>Opening</span><strong>Reservations and hours coming soon</strong></a>
+    </section>
+
+    <section class="tonight-console" id="tonight" aria-label="Plan a night at Amanti">
+      <div class="console-copy">
+        <p class="eyebrow">Tonight At Amanti</p>
+        <h2>Choose the night. The site should answer fast.</h2>
+        <p>Guests should know in seconds whether Amanti works for them: easy pizza with kids, a date at golden hour, a bar seat with pasta, or a better neighborhood dinner.</p>
+        <div class="console-actions">
+          <a href="food.html">See Food</a>
+          <a href="#visit">Map It</a>
+          <a href="origins.html">Why Central Italy</a>
+        </div>
+      </div>
+      <div class="console-stage">
+        <img data-night-image src="assets/margherita-pizza.webp" alt="Margherita pizza at Amanti">
+        <div class="console-panel">
+          <span data-night-kicker>Family Early</span>
+          <strong data-night-title>Pizza first. Pasta if the table keeps going.</strong>
+          <p data-night-copy>Approachable food, lighter check average, a room that still feels adult.</p>
+        </div>
+        <div class="night-selector" role="tablist" aria-label="Choose a visit type">
+          <button class="active" type="button" data-night-choice data-image="assets/margherita-pizza.webp" data-kicker="Family Early" data-title="Pizza first. Pasta if the table keeps going." data-copy="Approachable food, lighter check average, a room that still feels adult.">Kids</button>
+          <button type="button" data-night-choice data-image="assets/date-night-dinner.webp" data-kicker="Date Night" data-title="Warm table, red wine, food that shares." data-copy="Polished enough to feel planned, relaxed enough to avoid special-occasion stiffness.">Date</button>
+          <button type="button" data-night-choice data-image="assets/social-bar.webp" data-kicker="Bar Seat" data-title="Cocktail, pizza, pasta, stay a little." data-copy="A neighborhood bar rhythm with Italian food instead of a steakhouse commitment.">Bar</button>
+          <button type="button" data-night-choice data-image="assets/rigatoni-tomato.webp" data-kicker="Regular Dinner" data-title="Tomato, basil, olive oil, done right." data-copy="Simple food with enough origin and taste to become a weekly habit.">Regular</button>
+        </div>
+      </div>
     </section>
 
     <section class="brand-statement section-grid" id="expect">
       <div>
-        <p class="eyebrow">What To Expect</p>
-        <h2>A neighborhood Italian restaurant that still feels designed.</h2>
+        <p class="eyebrow">The Promise</p>
+        <h2>A beautiful room with an easy reason to return.</h2>
       </div>
       <div class="intro-copy">
-        <p>Come for food you understand quickly: focaccia, burrata, pizza, pasta, fish, wine, and a few larger plates when dinner turns into a longer night.</p>
-        <p>The room is warm and polished, but the point is simple: make Amanti useful enough for Tuesday and good-looking enough for Saturday.</p>
+        <p>Amanti keeps the room beautiful, but lowers the friction: more pizza, more simple pasta, more vegetables, more bright plates, and a clearer everyday base.</p>
+        <p>The origin is Francesco's Umbria and the Central Italian neighborhood table: Tuscany, Lazio, and Abruzzo around it, Scottsdale polish on top.</p>
       </div>
     </section>
 
@@ -95,7 +122,7 @@
       </figure>
       <figure>
         <img src="assets/bar-depth.webp" alt="A warm Italian bar with bottles, glassware, and ambient light">
-        <figcaption>Bar as neighborhood ritual</figcaption>
+        <figcaption>Bar as a weekly ritual</figcaption>
       </figure>
       <figure>
         <img src="assets/banquette.webp" alt="Banquette seating, walnut, leather, olive trees, and warm dining room light">
@@ -118,7 +145,7 @@
 
     <section class="brand-canvas" aria-label="Amanti brand canvas">
       <div class="brand-orbit" aria-hidden="true">
-        <span>UMBRA</span>
+        <span>UMBRIA</span>
         <span>OLIVE</span>
         <span>LINEN</span>
         <span>WINE</span>
