@@ -7,6 +7,10 @@ const tableKicker = document.querySelector('[data-table-kicker]');
 const tableTitle = document.querySelector('[data-table-title]');
 const tableCopy = document.querySelector('[data-table-copy]');
 const plateFrame = document.querySelector('.plate-frame');
+const moodChoices = [...document.querySelectorAll('[data-mood-choice]')];
+const moodImages = [...document.querySelectorAll('[data-mood-image]')];
+const moodHeading = document.querySelector('[data-mood-heading]');
+const moodCopy = document.querySelector('[data-mood-copy]');
 
 const updateHeader = () => {
   header.classList.toggle('scrolled', window.scrollY > 20);
@@ -21,6 +25,7 @@ updateHeader();
 window.addEventListener('pointermove', (event) => {
   document.documentElement.style.setProperty('--cursor-x', (event.clientX - 140) + 'px');
   document.documentElement.style.setProperty('--cursor-y', (event.clientY - 140) + 'px');
+  document.documentElement.style.setProperty('--cursor-page-x', Math.round((event.clientX / window.innerWidth) * 100) + '%');
 }, { passive: true });
 
 const revealObserver = new IntersectionObserver((entries) => {
@@ -62,5 +67,23 @@ tableChoices.forEach((choice) => {
       tableCopy.textContent = choice.dataset.copy;
       plateFrame?.classList.remove('changing');
     }, 140);
+  });
+});
+
+if (moodImages.length) {
+  document.body.dataset.mood = 'day';
+  moodImages[0].classList.add('active');
+}
+
+moodChoices.forEach((choice) => {
+  choice.addEventListener('click', () => {
+    const mood = choice.dataset.moodChoice;
+    document.body.dataset.mood = mood;
+    moodChoices.forEach((item) => item.classList.toggle('active', item === choice));
+    moodImages.forEach((image) => image.classList.toggle('active', image.dataset.moodImage === mood));
+    if (moodHeading && moodCopy) {
+      moodHeading.textContent = choice.dataset.heading;
+      moodCopy.textContent = choice.dataset.copy;
+    }
   });
 });
