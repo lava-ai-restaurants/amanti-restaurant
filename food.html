@@ -3,144 +3,114 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Food Gallery | Amanti Scottsdale</title>
-  <meta name="description" content="Explore Amanti's food gallery: pizza, pasta, antipasti, seafood, Central Italian comfort, and everyday neighborhood Italian dishes.">
+  <title>Food | Amanti Scottsdale</title>
+  <meta name="description" content="Amanti food direction: pizza, pasta, bread, wine, bright plates, and a young chef-driven Italian menu that stays approachable.">
   <meta name="theme-color" content="#17120e">
-  <meta property="og:title" content="Food Gallery | Amanti">
-  <meta property="og:description" content="Pizza, pasta, antipasti, seafood, and Central Italian comfort at Amanti Scottsdale.">
+  <meta property="og:title" content="Food | Amanti">
+  <meta property="og:description" content="Pizza, pasta, bread, wine, bright plates, and approachable young chef-driven Italian food.">
   <meta property="og:image" content="https://amantirestaurant.com/assets/margherita-pizza.webp">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://amantirestaurant.com/food.html">
   <link rel="preload" as="image" href="assets/margherita-pizza.webp">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="ambient-light" aria-hidden="true"></div>
+<body class="amanti-rebuild food-rebuild">
   <div class="scroll-meter" aria-hidden="true"><span data-scroll-meter></span></div>
   <header class="site-header" data-header>
     <a class="brand" href="index.html" aria-label="Amanti home">AMANTI</a>
     <nav aria-label="Primary">
-      <a href="food.html" aria-current="page">Food Gallery</a>
+      <a href="food.html" aria-current="page">Food</a>
+      <a href="index.html#vibe">Vibe</a>
+      <a href="index.html#why">Why</a>
       <a href="origins.html">Origins</a>
-      <a href="index.html#room">Room</a>
-      <a href="index.html#lifestyle">Lifestyle</a>
       <a href="index.html#visit">Visit</a>
     </nav>
     <a class="header-cta" href="index.html#visit">Reservations</a>
   </header>
 
   <main id="top">
-    <section class="origin-hero food-hero">
-      <img class="origin-hero-bg" src="assets/room-service-energy.webp" alt="An Amanti table filled with pizza, pasta, wine, and shared Italian plates">
-      <div class="hero-scrim"></div>
-      <div class="origin-hero-content">
-        <p class="eyebrow">Food Gallery</p>
-        <h1>Pizza, Pasta, Bread, Wine, Repeat.</h1>
-        <p class="hero-copy">This is the food world: approachable, generous, Central Italian, and built around the way people actually order.</p>
+    <section class="raw-hero food-raw-hero">
+      <img src="assets/margherita-pizza.webp" alt="Margherita pizza with tomato, mozzarella, basil, and blistered crust">
+      <div class="raw-hero-copy">
+        <p class="eyebrow">Food</p>
+        <h1>Pizza. Pasta. Wine. Repeat.</h1>
+        <p>Simple Italian food with enough chef energy to stay interesting. The menu should feel familiar, craveable, and alive.</p>
       </div>
     </section>
 
-    <section class="table-runner" aria-label="Amanti food on the table">
-      <div class="runner-copy">
-        <p class="eyebrow">How It Feels</p>
-        <h2>The table should fill up naturally: bread, tomatoes, pizza, pasta, wine, something from the sea.</h2>
-        <p>No heavy ceremony. Just food people recognize, crave, share, and reorder.</p>
+    <section class="menu-promise">
+      <div>
+        <p class="eyebrow">The Menu Idea</p>
+        <h2>Start easy. Add something bright. Come back for the next special.</h2>
       </div>
-      <div class="runner-track">
-        <figure class="runner-card tilt-left"><img src="assets/burrata-tomato.webp" alt="Burrata with tomatoes, basil, olive oil, and toasted bread"><figcaption>Burrata + tomato</figcaption></figure>
-        <figure class="runner-card lift"><img src="assets/margherita-pizza.webp" alt="Margherita pizza with tomato, mozzarella, basil, and blistered crust"><figcaption>Pizza in the middle</figcaption></figure>
-        <figure class="runner-card tilt-right"><img src="assets/rigatoni-tomato.webp" alt="Rigatoni pasta with tomato sauce, basil, and Parmigiano"><figcaption>Simple pasta</figcaption></figure>
-        <figure class="runner-card"><img src="assets/branzino-lemon.webp" alt="Whole branzino with lemon, herbs, capers, olive oil, and wine"><figcaption>Fish, lemon, herbs</figcaption></figure>
+      <div class="truth-cards">
+        <article><span>Start</span><h3>Bread, Burrata, Salad</h3><p>Fast, shareable, colorful food that gets the table moving.</p></article>
+        <article><span>Middle</span><h3>Pizza + Pasta</h3><p>The reason it works for families, regulars, dates, and bar seats.</p></article>
+        <article><span>Special</span><h3>Crudo, Veg, Seafood</h3><p>Enough chef-driven edge to make the place feel young and current.</p></article>
       </div>
     </section>
 
-    <section class="interactive-table" aria-label="Build an Amanti table">
-      <div class="interactive-copy">
-        <p class="eyebrow">Build The Table</p>
-        <h2>Tap through the meal and the table changes with you.</h2>
-        <p>Start fresh, add pizza, add pasta, keep it generous, finish light.</p>
-      </div>
-      <div class="table-stage">
-        <div class="plate-frame">
-          <img data-table-image src="assets/burrata-tomato.webp" alt="Burrata with tomatoes, basil, olive oil, and toasted bread">
-          <div class="plate-label">
-            <span data-table-kicker>Start</span>
-            <strong data-table-title>Burrata, tomato, olive oil</strong>
-            <p data-table-copy>Bright, simple, shareable. The table opens without feeling expensive or formal.</p>
-          </div>
-        </div>
-        <div class="table-choices" role="tablist" aria-label="Choose the Amanti table moment">
-          <button class="active" type="button" data-table-choice data-image="assets/burrata-tomato.webp" data-kicker="Start" data-title="Burrata, tomato, olive oil" data-copy="Bright, simple, shareable. The table opens without feeling expensive or formal.">Antipasti</button>
-          <button type="button" data-table-choice data-image="assets/margherita-pizza.webp" data-kicker="Middle" data-title="Margherita, sausage, broccolini" data-copy="Pizza is the approachable base: useful for families, regulars, bar seats, and weeknight dinners.">Pizza</button>
-          <button type="button" data-table-choice data-image="assets/rigatoni-tomato.webp" data-kicker="Comfort" data-title="Tomato pasta, ragu, passatelli" data-copy="Central Italian comfort. Familiar enough to crave, rooted enough to mean something.">Pasta</button>
-          <button type="button" data-table-choice data-image="assets/branzino-lemon.webp" data-kicker="Still Special" data-title="Branzino, lemon, herbs" data-copy="Seafood, wine, and larger plates keep the ceiling high without changing the neighborhood feel.">Secondi</button>
-        </div>
-      </div>
+    <section class="table-energy food-table" aria-label="Amanti food staples">
+      <figure><img src="assets/burrata-tomato.webp" alt="Burrata with tomatoes, basil, olive oil, and toasted bread"><figcaption>Burrata + tomato</figcaption></figure>
+      <figure><img src="assets/margherita-pizza.webp" alt="Margherita pizza"><figcaption>Pizza in the middle</figcaption></figure>
+      <figure><img src="assets/rigatoni-tomato.webp" alt="Tomato rigatoni"><figcaption>Simple pasta</figcaption></figure>
+      <figure><img src="assets/citrus-crudo.webp" alt="Citrus crudo"><figcaption>Bright plates</figcaption></figure>
+      <figure><img src="assets/branzino-lemon.webp" alt="Branzino with lemon and herbs"><figcaption>Fish, lemon, herbs</figcaption></figure>
+      <figure><img src="assets/dolce-berries.webp" alt="Dolce with berries"><figcaption>Something sweet</figcaption></figure>
     </section>
 
-    <section class="menu-section" id="menu">
+    <section class="menu-board" id="menu" aria-label="Amanti menu direction">
       <div class="section-heading">
-        <p class="eyebrow">Culinary Direction</p>
-        <h2>Pizza, pasta, antipasti, and Central Italian comfort as the base.</h2>
+        <p class="eyebrow">Menu Direction</p>
+        <h2>Recognizable Italian, done with energy.</h2>
       </div>
-      <div class="menu-shell">
-        <div class="menu-tabs" role="tablist" aria-label="Menu sections">
-          <button class="active" type="button" role="tab" aria-selected="true" data-menu-tab="antipasti">Antipasti</button>
-          <button type="button" role="tab" aria-selected="false" data-menu-tab="pasta">Pasta</button>
-          <button type="button" role="tab" aria-selected="false" data-menu-tab="pizza">Pizza</button>
-          <button type="button" role="tab" aria-selected="false" data-menu-tab="secondi">Secondi</button>
-        </div>
-        <div class="menu-panel active" data-menu-panel="antipasti">
-          <article><span>Focaccia e Pane</span><em>House bread, whipped mascarpone, olive oil</em></article>
-          <article><span>Pizza Rossa</span><em>San Marzano, Parmigiano Reggiano, oregano</em></article>
-          <article><span>Panzanella</span><em>Tomato, cucumber, greens, basil, capers</em></article>
-          <article><span>Burrata</span><em>Tomato, pomegranate, greens, fig jam</em></article>
-        </div>
-        <div class="menu-panel" data-menu-panel="pasta">
-          <article><span>Passatelli</span><em>Central Italian comfort, cheese, cream, Parmigiano</em></article>
-          <article><span>Mezzelune di Patate ai Porcini</span><em>Potato, taleggio, porcini mushroom</em></article>
-          <article><span>Pappardelle al Cinghiale</span><em>Wild boar white ragu</em></article>
-          <article><span>Lasagna Bianca</span><em>Bechamel, mozzarella, sausage, mushroom</em></article>
-        </div>
-        <div class="menu-panel" data-menu-panel="pizza">
-          <article><span>Margherita di Bufala</span><em>Bufala DOP, San Marzano, basil</em></article>
-          <article><span>Pomodorini Gialli e Speck</span><em>Burrata, yellow datterini, speck</em></article>
-          <article><span>Diavola</span><em>Soppressata calabrese, fiordilatte</em></article>
-          <article><span>Salsiccia e Friarielli</span><em>Sausage, broccolini, Calabrian chili</em></article>
-        </div>
-        <div class="menu-panel" data-menu-panel="secondi">
-          <article><span>Branzino al Cartoccio</span><em>Thin potato, charred cherry tomato</em></article>
-          <article><span>Spiedini di Gamberi e Calamari</span><em>Breadcrumbs, lemon, roasted peppers</em></article>
-          <article><span>Pollo alla Cacciatora</span><em>Tomato, olives, creamy mashed potato</em></article>
-          <article><span>Arrosticini</span><em>Charred lamb skewers, rosemary, mint salad</em></article>
-        </div>
-      </div>
-      <div class="menu-note-grid">
-        <article><span>Everyday Base</span><p>Pizza, focaccia, salads, and classic pasta carry the everyday value.</p></article>
-        <article><span>Central Italy</span><p>Umbria at the center, with Tuscany, Lazio, and Abruzzo shaping the pasta, bread, olive oil, herbs, and grilled comfort.</p></article>
-        <article><span>Still Special</span><p>Seafood, wine, cocktails, and a warm room keep it polished without getting formal.</p></article>
+      <div class="menu-list">
+        <article><span>Antipasti</span><p>Focaccia, burrata, tomato, panzanella, pizza rossa, little snacks for the table.</p></article>
+        <article><span>Pasta</span><p>Tomato pasta, ragu, passatelli, mushroom, simple sauces, handmade-feeling comfort.</p></article>
+        <article><span>Pizza</span><p>Margherita, diavola, sausage and greens, seasonal toppings, kid-friendly without being boring.</p></article>
+        <article><span>Secondi</span><p>Branzino, shrimp, calamari, chicken, grilled specials, lemon, herbs, olive oil.</p></article>
+        <article><span>Bar</span><p>Spritz, wine, martinis, amaro, espresso martinis, pizza at the bar.</p></article>
+        <article><span>Specials</span><p>Rotating vegetables, crudo, pasta drops, chef ideas, seasonal color.</p></article>
       </div>
     </section>
 
-    <section class="ingredient-strip" aria-label="Amanti ingredients and staples">
-      <span>San Marzano</span><span>Bufala</span><span>Passatelli</span><span>Porcini</span><span>Olive Oil</span><span>Broccolini</span><span>Lemon</span><span>Ragu</span><span>Focaccia</span>
-    </section>
-
-    <section class="gallery organic-gallery" aria-label="Amanti visual food gallery">
-      <figure class="wide"><img src="assets/room-service-energy.webp" alt="Warm Amanti dining room with guests, cocktails, wine, pizza, pasta, shared plates, and glowing globe lights"><figcaption>Food everywhere, not precious.</figcaption></figure>
-      <figure class="round"><img src="assets/rigatoni-tomato.webp" alt="Rigatoni pasta with tomato sauce, basil, and Parmigiano"><figcaption>Tomato pasta</figcaption></figure>
-      <figure><img src="assets/citrus-crudo.webp" alt="Italian crudo with citrus, radish, herbs, olive oil, and cracked pepper"><figcaption>Bright plates</figcaption></figure>
-      <figure class="tall"><img src="assets/margherita-pizza.webp" alt="Margherita pizza with mozzarella, tomato, basil, and blistered crust"><figcaption>Pizza first</figcaption></figure>
-      <figure><img src="assets/grilled-octopus.webp" alt="Grilled octopus with cherry tomatoes, olives, charred lemon, herbs, and olive oil"><figcaption>Grilled</figcaption></figure>
-      <figure><img src="assets/dolce-berries.webp" alt="Creamy Italian dolce with raspberry sauce, fresh berries, and mint"><figcaption>Dolce</figcaption></figure>
-      <figure class="wide"><img src="assets/group-toast-table.webp" alt="Four guests toasting wine over pizza, pasta, seafood, burrata, and bread"><figcaption>The table should look like this.</figcaption></figure>
+    <section class="visual-bank" aria-label="Amanti visual image bank">
+      <div class="section-heading">
+        <p class="eyebrow">Visual Bank</p>
+        <h2>Authentic, loose, colorful, usable.</h2>
+      </div>
+      <div class="visual-bank-grid">
+        <figure><img src="assets/amanti-new-01.webp" alt="Amanti visual reference 01"></figure>
+        <figure><img src="assets/amanti-new-02.webp" alt="Amanti visual reference 02"></figure>
+        <figure><img src="assets/amanti-new-03.webp" alt="Amanti visual reference 03"></figure>
+        <figure><img src="assets/amanti-new-04.webp" alt="Amanti visual reference 04"></figure>
+        <figure><img src="assets/amanti-new-05.webp" alt="Amanti visual reference 05"></figure>
+        <figure><img src="assets/amanti-new-06.webp" alt="Amanti visual reference 06"></figure>
+        <figure><img src="assets/amanti-new-07.webp" alt="Amanti visual reference 07"></figure>
+        <figure><img src="assets/amanti-new-08.webp" alt="Amanti visual reference 08"></figure>
+        <figure><img src="assets/amanti-new-09.webp" alt="Amanti visual reference 09"></figure>
+        <figure><img src="assets/amanti-new-10.webp" alt="Amanti visual reference 10"></figure>
+        <figure><img src="assets/amanti-new-11.webp" alt="Amanti visual reference 11"></figure>
+        <figure><img src="assets/amanti-new-12.webp" alt="Amanti visual reference 12"></figure>
+        <figure><img src="assets/amanti-new-13.webp" alt="Amanti visual reference 13"></figure>
+        <figure><img src="assets/amanti-new-14.webp" alt="Amanti visual reference 14"></figure>
+        <figure><img src="assets/amanti-new-15.webp" alt="Amanti visual reference 15"></figure>
+        <figure><img src="assets/amanti-new-16.webp" alt="Amanti visual reference 16"></figure>
+        <figure><img src="assets/amanti-new-17.webp" alt="Amanti visual reference 17"></figure>
+        <figure><img src="assets/amanti-new-18.webp" alt="Amanti visual reference 18"></figure>
+        <figure><img src="assets/amanti-new-19.webp" alt="Amanti visual reference 19"></figure>
+        <figure><img src="assets/amanti-new-20.webp" alt="Amanti visual reference 20"></figure>
+        <figure><img src="assets/amanti-new-21.webp" alt="Amanti visual reference 21"></figure>
+      </div>
     </section>
   </main>
+
   <footer>
     <span>AMANTI</span>
-    <span>Food Gallery</span>
+    <span>Food</span>
     <span>Scottsdale, Arizona</span>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
